@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const isDev = process.env.NODE_ENV === 'development';
+
 const nextConfig = {
   output: 'export',
   images: {
@@ -11,8 +13,11 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/nextjs-demo',
-  assetPrefix: '/nextjs-demo/',
+  // Only use basePath and assetPrefix for production builds
+  ...(isDev ? {} : {
+    basePath: '/nextjs-demo',
+    assetPrefix: '/nextjs-demo/',
+  }),
   trailingSlash: true,
 }
 

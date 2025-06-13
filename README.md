@@ -1,63 +1,197 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
+# Hillsdale Community Foundation Website
 
-This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
+A modern, statically generated website for the Hillsdale Community Foundation built with Next.js, TypeScript, and Tailwind CSS.
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) feature using Markdown files as the data source.
+## 🌟 Features
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+- **Static Site Generation**: Fast, SEO-friendly pages generated at build time
+- **Modern Stack**: Built with Next.js 14, TypeScript, and Tailwind CSS
+- **Responsive Design**: Mobile-first design that works on all devices
+- **Blog System**: Markdown-based blog posts with front matter support
+- **Google Calendar Integration**: Embedded calendar showing upcoming events
+- **GitHub Pages Ready**: Configured for deployment to GitHub Pages
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+## 🚀 Quick Start
 
-## Demo
+### Prerequisites
+- Node.js 16+ 
+- npm, yarn, or pnpm
 
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
+### Installation
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
-
-### Related examples
-
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Umbraco Heartcore](/examples/cms-umbraco-heartcore)
-- [Builder.io](/examples/cms-builder-io)
-- [TinaCMS](/examples/cms-tina/)
-- [Enterspeed](/examples/cms-enterspeed)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
+1. Clone the repository:
 ```bash
-npx create-next-app --example blog-starter blog-starter-app
+git clone <your-repo-url>
+cd site-demo
 ```
 
+2. Install dependencies:
 ```bash
-yarn create next-app --example blog-starter blog-starter-app
+npm install
 ```
 
+3. Start the development server:
 ```bash
-pnpm create next-app --example blog-starter blog-starter-app
+npm run dev
 ```
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+Your site will be available at [http://localhost:3000](http://localhost:3000)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## 📁 Project Structure
 
-# Notes
+```
+├── src/
+│   ├── app/                 # Next.js App Router pages
+│   │   ├── _components/     # Reusable React components
+│   │   ├── about/          # About page
+│   │   ├── events/         # Events page
+│   │   ├── get-involved/   # Get Involved page
+│   │   ├── programs/       # Programs page
+│   │   ├── resources/      # Resources page
+│   │   └── posts/          # Dynamic blog post pages
+│   ├── interfaces/         # TypeScript type definitions
+│   └── lib/               # Utility functions and API helpers
+├── _posts/                # Markdown blog posts
+├── content/               # Additional markdown content
+├── public/                # Static assets (images, favicon, etc.)
+├── next.config.js         # Next.js configuration
+├── tailwind.config.ts     # Tailwind CSS configuration
+└── tsconfig.json          # TypeScript configuration
+```
 
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+## 🛠 Development
+
+### Available Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm start        # Start production server (after build)
+npm run typecheck # Run TypeScript type checking
+```
+
+### Key Technologies
+
+- **[Next.js 14](https://nextjs.org/)**: React framework with App Router
+- **[TypeScript](https://www.typescriptlang.org/)**: Type-safe JavaScript
+- **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework
+- **[React](https://react.dev/)**: UI library
+- **[Remark](https://remarkjs.com/)**: Markdown processor
+- **[Gray Matter](https://github.com/jonschlinkert/gray-matter)**: Front matter parser
+
+## 📝 Content Management
+
+### Adding Blog Posts
+
+1. Create a new `.md` file in the `_posts/` directory
+2. Add front matter at the top:
+```markdown
+---
+title: 'Your Post Title'
+excerpt: 'A brief description of your post'
+coverImage: '/assets/blog/your-post/cover.jpg'
+date: '2025-06-13T05:35:07.322Z'
+author:
+  name: 'Author Name'
+  picture: '/assets/blog/authors/author.jpeg'
+ogImage:
+  url: '/assets/blog/your-post/cover.jpg'
+---
+
+Your markdown content goes here...
+```
+
+### Editing Page Content
+
+- Homepage content: `content/homepage.md`
+- About page: `src/app/about/page.tsx`
+- Other pages: Located in their respective directories under `src/app/`
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env.local` file for local development:
+```bash
+# Add any environment variables here
+```
+
+### Google Calendar Integration
+
+The events page includes an embedded Google Calendar. To change the calendar:
+
+1. Open `src/app/_components/upcoming-events.tsx`
+2. Replace the `calendarId` variable with your Google Calendar ID
+
+### Deployment Configuration
+
+The site is configured for GitHub Pages deployment with:
+- `basePath: '/nextjs-demo'` for production
+- `assetPrefix: '/nextjs-demo/'` for production
+- Conditional configuration that only applies these settings in production
+
+## 🚀 Deployment
+
+### GitHub Pages
+
+1. **Build the site:**
+```bash
+npm run build
+```
+
+2. **Deploy to GitHub Pages:**
+The site will be deployed to `https://yourusername.github.io/nextjs-demo/`
+
+### Manual Deployment
+
+1. **Export static files:**
+```bash
+npm run build
+```
+
+2. **Deploy the `out/` directory** to your web server
+
+### Vercel (Alternative)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/site-demo)
+
+## 🐛 Troubleshooting
+
+### CSS Not Loading in Development
+
+This was a known issue that has been fixed. The problem was caused by the `basePath` configuration interfering with local development. The fix:
+
+- `next.config.js` now conditionally applies `basePath` only in production
+- Duplicate `src/public/` directory was removed
+- Tailwind configuration updated to include all necessary content paths
+
+### Common Issues
+
+- **Port 3000 in use**: The dev server will automatically try port 3001
+- **Build errors**: Run `npm run typecheck` to identify TypeScript issues
+- **Styling issues**: Ensure Tailwind classes are included in the content paths
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Make your changes
+4. Test locally: `npm run dev`
+5. Build and test production: `npm run build`
+6. Commit your changes: `git commit -m 'Add feature'`
+7. Push to the branch: `git push origin feature-name`
+8. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🆘 Support
+
+For support and questions:
+- Create an issue in the GitHub repository
+- Contact the Hillsdale Community Foundation
+
+---
+
+Built with ❤️ for the Hillsdale Community Foundation
