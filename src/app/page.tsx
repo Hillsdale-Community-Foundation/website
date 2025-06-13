@@ -26,7 +26,7 @@ export default function Home() {
           <section className="bg-gray-50 p-8 rounded-lg">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-bold">Upcoming Events</h2>
-              <a href="/events" className="text-blue-600 hover:text-blue-800">View Calendar →</a>
+              <a href="/events" className="text-hillsdale-red hover:text-hillsdale-yellow">View Calendar →</a>
             </div>
             <UpcomingEvents />
           </section>
