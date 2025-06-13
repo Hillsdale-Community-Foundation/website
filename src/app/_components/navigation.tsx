@@ -4,17 +4,18 @@ import DonateButton from './donate-button';
 
 const Navigation = () => {
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-hillsdale-blue text-white shadow-lg">
       <Container>
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="font-bold text-xl">
             Hillsdale Community Foundation
-          </Link>          <div className="hidden md:flex space-x-8 items-center">
-            <Link href="/about" className="hover:text-blue-600">About</Link>
-            <Link href="/programs" className="hover:text-blue-600">Programs</Link>
-            <Link href="/events" className="hover:text-blue-600">Events</Link>
-            <Link href="/get-involved" className="hover:text-blue-600">Get Involved</Link>
-            <Link href="/resources" className="hover:text-blue-600">Resources</Link>
+          </Link>
+          <div className="hidden md:flex space-x-8 items-center">
+            <Link href="/about" className="hover:text-hillsdale-yellow">About</Link>
+            <Link href="/programs" className="hover:text-hillsdale-yellow">Programs</Link>
+            <Link href="/events" className="hover:text-hillsdale-yellow">Events</Link>
+            <Link href="/get-involved" className="hover:text-hillsdale-yellow">Get Involved</Link>
+            <Link href="/resources" className="hover:text-hillsdale-yellow">Resources</Link>
             <DonateButton />
           </div>          <div className="flex items-center space-x-4">
             <div className="md:hidden">
@@ -33,3 +34,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+

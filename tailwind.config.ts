@@ -20,6 +20,9 @@ const config: Config = {
         "accent-7": "#333",
         success: "#0070f3",
         cyan: "#79FFE1",
+        "hillsdale-blue": "#2563eb",
+        "hillsdale-red": "#dc2626",
+        "hillsdale-yellow": "#fbbf24",
       },
       spacing: {
         28: "7rem",
