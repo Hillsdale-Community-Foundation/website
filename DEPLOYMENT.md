@@ -18,7 +18,7 @@ The site is pre-configured for GitHub Pages deployment with a custom domain.
 
 ### Current Configuration
 
-- **Custom Domain**: `new.hillsdalecommunityfoundation.org`
+- **Custom Domain**: `www.hillsdalecommunityfoundation.org`
 - **CNAME File**: Included in `public/CNAME`
 - **No basePath**: Clean URLs without subdirectory
 
@@ -26,12 +26,12 @@ The site is pre-configured for GitHub Pages deployment with a custom domain.
 
 1. **DNS Configuration** (Already done):
    - Point your domain's DNS to GitHub Pages
-   - CNAME record: `new.hillsdalecommunityfoundation.org` → `hillsdale-community-foundation.github.io`
+   - CNAME record: `www.hillsdalecommunityfoundation.org` → `hillsdale-community-foundation.github.io`
 
 2. **Repository Settings**:
    - Go to Settings > Pages
    - Source: "GitHub Actions"
-   - Custom domain: `new.hillsdalecommunityfoundation.org`
+   - Custom domain: `www.hillsdalecommunityfoundation.org`
 
 3. **Deploy**:
    ```bash
@@ -41,7 +41,7 @@ The site is pre-configured for GitHub Pages deployment with a custom domain.
    ```
 
 4. **Access**: Your site will be available at:
-   `https://new.hillsdalecommunityfoundation.org`
+   `https://www.hillsdalecommunityfoundation.org`
 
 ### Switching to Subdirectory Deployment
 

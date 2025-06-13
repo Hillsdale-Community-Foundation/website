@@ -9,7 +9,7 @@ A modern, statically generated website for the Hillsdale Community Foundation bu
 - **Responsive Design**: Mobile-first design that works on all devices
 - **Blog System**: Markdown-based blog posts with front matter support
 - **Google Calendar Integration**: Embedded calendar showing upcoming events
-- **Custom Domain**: Configured for deployment to `new.hillsdalecommunityfoundation.org`
+- **Custom Domain**: Configured for deployment to `www.hillsdalecommunityfoundation.org`
 
 ## 🚀 Quick Start
 
@@ -134,7 +134,7 @@ The site is configured for GitHub Pages deployment with:
 
 ### Custom Domain (Current Setup)
 
-The site is configured for deployment to a custom domain: `https://new.hillsdalecommunityfoundation.org`
+The site is configured for deployment to a custom domain: `https://www.hillsdalecommunityfoundation.org`
 
 1. **Build the site:**
 ```bash
