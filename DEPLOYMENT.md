@@ -25,7 +25,7 @@ The site is pre-configured for GitHub Pages deployment with automated CI/CD.
 
 2. **Update Configuration** (if needed):
    - Repository name should match the `basePath` in `next.config.js`
-   - Current setting: `basePath: '/nextjs-demo'`
+   - Current setting: `basePath: '/site-demo'`
    - If your repo is named differently, update this value
 
 3. **Deploy**:
@@ -112,8 +112,8 @@ If deploying to a custom domain:
    const nextConfig = {
      output: 'export',
      // Remove or comment out basePath and assetPrefix
-     // basePath: '/nextjs-demo',
-     // assetPrefix: '/nextjs-demo/',
+     // basePath: '/site-demo',
+     // assetPrefix: '/site-demo/',
    }
    ```
 

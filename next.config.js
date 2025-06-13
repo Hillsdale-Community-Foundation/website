@@ -12,11 +12,10 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-  },
-  // Only use basePath and assetPrefix for production builds
+  },  // Only use basePath and assetPrefix for production builds
   ...(isDev ? {} : {
-    basePath: '/nextjs-demo',
-    assetPrefix: '/nextjs-demo/',
+    basePath: '/site-demo',
+    assetPrefix: '/site-demo/',
   }),
   trailingSlash: true,
 }
