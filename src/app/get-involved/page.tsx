@@ -1,5 +1,6 @@
 import Container from "@/app/_components/container";
 import Link from "next/link";
+import DonateButton from "@/app/_components/donate-button";
 
 export default function GetInvolved() {
   return (
@@ -23,19 +24,22 @@ export default function GetInvolved() {
               <Link href="/contact" className="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                 Contact Us to Volunteer
               </Link>
-            </section>
-
-            <section className="bg-green-50 p-8 rounded-lg">
+            </section>            <section className="bg-green-50 p-8 rounded-lg">
               <h2 className="text-2xl font-semibold mb-4">Donate</h2>
-              <p className="mb-4">
+              <p className="mb-6">
                 Your donations help us continue our work in the Hillsdale community. All donations are tax-deductible.
               </p>
-              <div className="space-y-4">
-                <p className="font-semibold">Send checks to:</p>
+              
+              <div className="mb-6">
+                <h3 className="font-semibold mb-3">Donate Online:</h3>
+                <DonateButton />
+              </div>
+                <div className="space-y-4">
+                <p className="font-semibold">Or send checks to:</p>
                 <address className="not-italic">
                   Hillsdale Community Foundation<br />
-                  P.O. Box 82995<br />
-                  Portland, OR 97282
+                  1528 SW PENDLETON ST<br />
+                  97239-2618
                 </address>
               </div>
             </section>
