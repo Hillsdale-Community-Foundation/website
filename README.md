@@ -9,7 +9,7 @@ A modern, statically generated website for the Hillsdale Community Foundation bu
 - **Responsive Design**: Mobile-first design that works on all devices
 - **Blog System**: Markdown-based blog posts with front matter support
 - **Google Calendar Integration**: Embedded calendar showing upcoming events
-- **GitHub Pages Ready**: Configured for deployment to GitHub Pages
+- **Custom Domain**: Configured for deployment to `new.hillsdalecommunityfoundation.org`
 
 ## 🚀 Quick Start
 
@@ -132,7 +132,9 @@ The site is configured for GitHub Pages deployment with:
 
 ## 🚀 Deployment
 
-### GitHub Pages
+### Custom Domain (Current Setup)
+
+The site is configured for deployment to a custom domain: `https://new.hillsdalecommunityfoundation.org`
 
 1. **Build the site:**
 ```bash
@@ -140,7 +142,23 @@ npm run build
 ```
 
 2. **Deploy to GitHub Pages:**
-The site will be deployed to `https://yourusername.github.io/nextjs-demo/`
+The site will be deployed to your custom domain automatically via GitHub Actions.
+
+### GitHub Pages with Subdirectory (Alternative)
+
+If you want to deploy to `https://yourusername.github.io/repository-name/` instead:
+
+1. Update `next.config.js` to include basePath:
+```javascript
+const nextConfig = {
+  output: 'export',
+  basePath: '/your-repo-name',
+  assetPrefix: '/your-repo-name/',
+  // ... other config
+}
+```
+
+2. Remove the `CNAME` file from the `public/` directory
 
 ### Manual Deployment
 
@@ -170,6 +188,7 @@ This was a known issue that has been fixed. The problem was caused by the `baseP
 - **Port 3000 in use**: The dev server will automatically try port 3001
 - **Build errors**: Run `npm run typecheck` to identify TypeScript issues
 - **Styling issues**: Ensure Tailwind classes are included in the content paths
+- **CSS not loading on GitHub Pages**: Ensure the `basePath` in `next.config.js` matches your repository name exactly
 
 ## 🤝 Contributing
 

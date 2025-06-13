@@ -12,21 +12,26 @@ Before deploying, ensure:
 - [ ] Content is up to date
 - [ ] Environment variables are configured (if needed)
 
-## 🎯 GitHub Pages (Recommended)
+## 🎯 GitHub Pages (Current Setup)
 
-The site is pre-configured for GitHub Pages deployment with automated CI/CD.
+The site is pre-configured for GitHub Pages deployment with a custom domain.
+
+### Current Configuration
+
+- **Custom Domain**: `new.hillsdalecommunityfoundation.org`
+- **CNAME File**: Included in `public/CNAME`
+- **No basePath**: Clean URLs without subdirectory
 
 ### Setup Steps
 
-1. **Enable GitHub Pages** in your repository:
+1. **DNS Configuration** (Already done):
+   - Point your domain's DNS to GitHub Pages
+   - CNAME record: `new.hillsdalecommunityfoundation.org` → `hillsdale-community-foundation.github.io`
+
+2. **Repository Settings**:
    - Go to Settings > Pages
    - Source: "GitHub Actions"
-   - The workflow will automatically deploy on pushes to `main`
-
-2. **Update Configuration** (if needed):
-   - Repository name should match the `basePath` in `next.config.js`
-   - Current setting: `basePath: '/site-demo'`
-   - If your repo is named differently, update this value
+   - Custom domain: `new.hillsdalecommunityfoundation.org`
 
 3. **Deploy**:
    ```bash
@@ -36,7 +41,28 @@ The site is pre-configured for GitHub Pages deployment with automated CI/CD.
    ```
 
 4. **Access**: Your site will be available at:
-   `https://[username].github.io/[repository-name]/`
+   `https://new.hillsdalecommunityfoundation.org`
+
+### Switching to Subdirectory Deployment
+
+If you want to switch back to `https://[username].github.io/[repository-name]/`:
+
+1. **Remove CNAME file**:
+   ```bash
+   rm public/CNAME
+   ```
+
+2. **Update next.config.js**:
+   ```javascript
+   const nextConfig = {
+     output: 'export',
+     basePath: '/site-demo',
+     assetPrefix: '/site-demo/',
+     // ... other config
+   }
+   ```
+
+3. **Update repository settings** to remove custom domain
 
 ### Automatic Deployment
 

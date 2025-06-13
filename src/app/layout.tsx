@@ -7,6 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://new.hillsdalecommunityfoundation.org'),
   title: 'Hillsdale Community Foundation',
   description: 'Building community in Hillsdale since 2006',
   openGraph: {
