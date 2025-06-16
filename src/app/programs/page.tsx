@@ -1,6 +1,16 @@
 import Container from "@/app/_components/container";
+import ImageGallery from "@/app/_components/image-gallery";
 
 export default function Programs() {
+  const eventImages = [
+    {
+      src: "/assets/easter-egg-hunt.jpg",
+      alt: "Hillsdale Easter Egg Hunt",
+      caption: "Annual Easter Egg Hunt bringing families together"
+    },
+    // More images can be added as they're moved from old-site
+  ];
+
   return (
     <main>
       <Container>
@@ -56,7 +66,11 @@ export default function Programs() {
                 <li>Neighborhood beautification</li>
                 <li>School support programs</li>
                 <li>Environmental sustainability initiatives</li>
-              </ul>
+              </ul>            </section>
+
+            <section className="bg-white rounded-lg shadow-md p-6 mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Community Events Gallery</h2>
+              <ImageGallery images={eventImages} />
             </section>
           </div>
         </div>

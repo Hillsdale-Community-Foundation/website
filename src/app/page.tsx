@@ -1,17 +1,26 @@
 import Container from "@/app/_components/container";
 import UpcomingEvents from "@/app/_components/upcoming-events";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <Container>
+    <main>      <Container>
         <section className="py-20">
-          <h1 className="text-5xl font-bold mb-8">
-            Building Community in Hillsdale
-          </h1>
-          <p className="text-xl mb-12">
-            The Hillsdale Community Foundation exists to strengthen community among those who live and work in Hillsdale. The Foundation organizes community events; supports our schools and other institutions; beautifies and sustains our environment; and helps neighbors in need.
-          </p>
+          <div className="text-center mb-12">
+            <Image 
+              src="/assets/hcf-logo.png" 
+              alt="Hillsdale Community Foundation Logo"
+              width={120}
+              height={120}
+              className="mx-auto mb-8 rounded-full shadow-lg"
+            />
+            <h1 className="text-5xl font-bold mb-8">
+              Building Community in Hillsdale
+            </h1>
+            <p className="text-xl mb-12 max-w-4xl mx-auto">
+              The Hillsdale Community Foundation exists to strengthen community among those who live and work in Hillsdale. The Foundation organizes community events; supports our schools and other institutions; beautifies and sustains our environment; and helps neighbors in need.
+            </p>
+          </div>
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-blue-50 p-6 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Annual Book Sale</h2>

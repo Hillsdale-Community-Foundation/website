@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Hillsdale Community Foundation',
   description: 'Building community in Hillsdale since 2006',
   openGraph: {
-    images: ['/assets/hcf-logo.jpg'],
+    images: ['/assets/hcf-logo.png'],
   },
 };
 

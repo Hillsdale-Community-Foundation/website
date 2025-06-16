@@ -1,14 +1,23 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from './container';
 import DonateButton from './donate-button';
 
 const Navigation = () => {
   return (
     <nav className="bg-hillsdale-blue text-white shadow-lg">
-      <Container>
-        <div className="flex justify-between items-center py-4">
-          <Link href="/" className="font-bold text-xl">
-            Hillsdale Community Foundation
+      <Container>        <div className="flex justify-between items-center py-4">
+          <Link href="/" className="flex items-center space-x-3">
+            <Image 
+              src="/assets/hcf-logo.png" 
+              alt="Hillsdale Community Foundation Logo"
+              width={50}
+              height={50}
+              className="rounded-full"
+            />
+            <span className="font-bold text-xl">
+              Hillsdale Community Foundation
+            </span>
           </Link>
           <div className="hidden md:flex space-x-8 items-center">
             <Link href="/about" className="hover:text-hillsdale-yellow">About</Link>
