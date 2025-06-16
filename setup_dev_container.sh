@@ -10,6 +10,14 @@ if ! command -v docker >/dev/null 2>&1; then
 fi
 
 echo "Building development image..."
+echo "Creating .dockerignore file..."
+cat > .dockerignore <<'EOF'
+.git/
+node_modules/
+*.log
+Dockerfile
+.dockerignore
+EOF
 docker build -t "$IMAGE_NAME" -f- . <<'DOCKER'
 FROM node:18
 WORKDIR /app
