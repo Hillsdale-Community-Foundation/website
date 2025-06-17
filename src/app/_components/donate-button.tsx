@@ -1,20 +1,19 @@
 const DonateButton = () => {
   return (
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-      <input type="hidden" name="hosted_button_id" value="QAL85Q7P9XXEE" />      <input 
-        type="image" 
-        src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
-        name="submit" 
-        title="PayPal - The safer, easier way to pay online!" 
-        alt="Donate with PayPal button"
-        className="hover:opacity-80 transition-opacity border-0"
-      />
+    <form action="https://www.paypal.com/donate" method="post" target="_top" className="inline-block">
+      <input type="hidden" name="hosted_button_id" value="QAL85Q7P9XXEE" />
+      <button 
+        type="submit"
+        className="bg-hillsdale-blue text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-sm"
+      >
+        Donate
+      </button>
       <img 
         alt="" 
         src="https://www.paypal.com/en_US/i/scr/pixel.gif" 
         width="1" 
         height="1" 
-        className="border-0"
+        className="border-0 hidden"
       />
     </form>
   );

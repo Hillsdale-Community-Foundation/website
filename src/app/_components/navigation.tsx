@@ -3,34 +3,27 @@ import Image from 'next/image';
 import Container from './container';
 import DonateButton from './donate-button';
 
-const Navigation = () => {
-  return (
-    <nav className="bg-hillsdale-blue text-white shadow-lg">
-      <Container>        <div className="flex justify-between items-center py-4">
-          <Link href="/" className="flex items-center space-x-3">
+const Navigation = () => {  return (
+    <nav className="bg-white bg-opacity-95 backdrop-blur-sm shadow-sm border-b border-gray-100">
+      <Container>        <div className="flex justify-between items-center py-4"><Link href="/" className="flex items-center">
             <Image 
               src="/assets/hcf-logo.png" 
-              alt="Hillsdale Community Foundation Logo"
-              width={50}
-              height={50}
-              className="rounded-full"
+              alt="Hillsdale Community Foundation"
+              width={80}
+              height={80}
+              className="hover:opacity-90 transition-opacity"
             />
-            <span className="font-bold text-xl">
-              Hillsdale Community Foundation
-            </span>
-          </Link>
-          <div className="hidden md:flex space-x-8 items-center">
-            <Link href="/about" className="hover:text-hillsdale-yellow">About</Link>
-            <Link href="/programs" className="hover:text-hillsdale-yellow">Programs</Link>
-            <Link href="/events" className="hover:text-hillsdale-yellow">Events</Link>
-            <Link href="/get-involved" className="hover:text-hillsdale-yellow">Get Involved</Link>
-            <Link href="/resources" className="hover:text-hillsdale-yellow">Resources</Link>
+          </Link>          <div className="hidden md:flex space-x-8 items-center">
+            <Link href="/about" className="text-gray-700 hover:text-hillsdale-blue font-medium transition-colors">About</Link>
+            <Link href="/programs" className="text-gray-700 hover:text-hillsdale-blue font-medium transition-colors">Programs</Link>
+            <Link href="/resources" className="text-gray-700 hover:text-hillsdale-blue font-medium transition-colors">Partners</Link>
+            <Link href="/events" className="text-gray-700 hover:text-hillsdale-blue font-medium transition-colors">Events</Link>
+            <Link href="/get-involved" className="text-gray-700 hover:text-hillsdale-blue font-medium transition-colors">Get Involved</Link>
             <DonateButton />
-          </div>          <div className="flex items-center space-x-4">
+          </div><div className="flex items-center space-x-4">
             <div className="md:hidden">
               <DonateButton />
-            </div>
-            <button className="md:hidden">
+            </div>            <button className="md:hidden text-gray-700 hover:text-hillsdale-blue">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>

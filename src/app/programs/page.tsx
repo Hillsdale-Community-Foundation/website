@@ -1,24 +1,23 @@
 import Container from "@/app/_components/container";
-import ImageGallery from "@/app/_components/image-gallery";
 
 export default function Programs() {
-  const eventImages = [
-    {
-      src: "/assets/easter-egg-hunt.jpg",
-      alt: "Hillsdale Easter Egg Hunt",
-      caption: "Annual Easter Egg Hunt bringing families together"
-    },
-    // More images can be added as they're moved from old-site
-  ];
-
   return (
-    <main>
-      <Container>
-        <div className="py-16">
+    <main className="relative">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/assets/easter-egg-hunt.jpg)',
+        }}
+      />
+      <div className="absolute inset-0 bg-white bg-opacity-90" />
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <Container><div className="py-16">
           <h1 className="text-4xl font-bold mb-8">Our Programs</h1>
-          
-          <div className="space-y-12">
-            <section className="bg-white rounded-lg shadow-md p-6">
+            <div className="space-y-8">
+            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-semibold mb-4">Annual Book Sale</h2>
               <p className="text-lg mb-4">
                 Our annual book sale is a cherished community event that brings together readers 
@@ -29,9 +28,7 @@ export default function Programs() {
                 <p>Time: 9:00 AM – 1:00 PM</p>
                 <p>Location: Hillsdale Library Parking Lot</p>
               </div>
-            </section>
-
-            <section className="bg-white rounded-lg shadow-md p-6">
+            </section>            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-semibold mb-4">Hillsdale Assistance Team (HAT)</h2>
               <p className="text-lg mb-4">
                 HAT provides support to neighbors in need through community outreach and assistance programs.
@@ -42,9 +39,7 @@ export default function Programs() {
                 <p>Meeting ID: 895 8793 7438</p>
                 <p>Passcode: 457499</p>
               </div>
-            </section>
-
-            <section className="bg-white rounded-lg shadow-md p-6">
+            </section>            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-semibold mb-4">The Usual Suspects</h2>
               <p className="text-lg mb-4">
                 Join our monthly community cleanup initiative to help keep Hillsdale beautiful.
@@ -55,26 +50,9 @@ export default function Programs() {
                 <p>Bring: Gloves and weather-appropriate clothing</p>
               </div>
             </section>
-
-            <section className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-semibold mb-4">Community Projects</h2>
-              <p className="text-lg mb-4">
-                We support various community initiatives throughout the year, including:
-              </p>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Josh Kadish Community Stage events</li>
-                <li>Neighborhood beautification</li>
-                <li>School support programs</li>
-                <li>Environmental sustainability initiatives</li>
-              </ul>            </section>
-
-            <section className="bg-white rounded-lg shadow-md p-6 mb-12">
-              <h2 className="text-2xl font-semibold mb-4">Community Events Gallery</h2>
-              <ImageGallery images={eventImages} />
-            </section>
-          </div>
-        </div>
+          </div>        </div>
       </Container>
+      </div>
     </main>
   );
 }
