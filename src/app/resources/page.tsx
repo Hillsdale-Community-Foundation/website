@@ -14,10 +14,12 @@ export default function Resources() {
       
       {/* Content */}
       <div className="relative z-10">
-        <Container><div className="py-16">
+      <Container>
+        <div className="py-16">
           <h1 className="text-4xl font-bold mb-8">Community Partners</h1>
-          
-          <div className="space-y-8">            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-8">
+
+          <div className="space-y-8">
+            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-semibold mb-4">Hillsdale Assistance Team (HAT)</h2>
               <p className="text-lg mb-6">
                 HAT provides support to neighbors in need through community outreach and assistance programs.
@@ -31,7 +33,8 @@ export default function Resources() {
                   <li>Monthly meetings to coordinate assistance efforts</li>
                 </ul>
               </div>
-            </section>            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-8">
+            </section>
+            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-semibold mb-4">Hillsdale News</h2>
               <p className="text-lg mb-6">
                 Stay informed about local events, initiatives, and community updates through our various news channels:
@@ -57,7 +60,8 @@ export default function Resources() {
                   </ul>
                 </div>
               </div>
-            </section>            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-8">
+            </section>
+            <section className="bg-white bg-opacity-95 rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-semibold mb-4">Partnership Opportunities</h2>
               <div className="bg-blue-50 p-6 rounded-lg">
                 <p className="text-lg mb-4">
@@ -68,21 +72,22 @@ export default function Resources() {
                   and community members who share our vision of strengthening Hillsdale.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a 
-                    href="/get-involved" 
+                  <a
+                    href="/get-involved"
                     className="bg-hillsdale-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center"
                   >
                     Get Involved
                   </a>
-                  <a 
-                    href="/about" 
+                  <a
+                    href="/about"
                     className="border border-hillsdale-blue text-hillsdale-blue px-6 py-3 rounded-lg font-medium hover:bg-hillsdale-blue hover:text-white transition-colors text-center"
                   >
                     Learn More
                   </a>
                 </div>
               </div>
-            </section>          </div>
+            </section>
+          </div>
         </div>
       </Container>
       </div>

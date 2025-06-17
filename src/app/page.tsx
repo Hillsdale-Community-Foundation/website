@@ -12,12 +12,13 @@ export default function Home() {
           backgroundImage: 'url(/assets/community-background.jpg)',
         }}
       />
-      <div className="absolute inset-0 bg-white bg-opacity-85" />
+      <div className="absolute inset-0 bg-white bg-opacity-80" />
       
       {/* Content */}
       <div className="relative z-10">
         <Container>
-        <section className="py-20">          <div className="text-center mb-12">
+        <section className="py-20">
+          <div className="text-center mb-12">
             <Image 
               src="/assets/hcf-logo.png" 
               alt="Hillsdale Community Foundation Logo"
