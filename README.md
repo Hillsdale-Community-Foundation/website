@@ -10,6 +10,7 @@ A modern, statically generated website for the Hillsdale Community Foundation bu
 - **Blog System**: Markdown-based blog posts with front matter support
 - **Google Calendar Integration**: Embedded calendar showing upcoming events
 - **Custom Domain**: Configured for deployment to `www.hillsdalecommunityfoundation.org`
+- **Feedback Widget**: Easy reporting of website issues via Formspree
 
 ## 🚀 Quick Start
 
@@ -210,6 +211,7 @@ This project is licensed under the MIT License.
 For support and questions:
 - Create an issue in the GitHub repository
 - Contact the Hillsdale Community Foundation
+- Use the website Feedback button to report issues or requests
 
 ---
 
