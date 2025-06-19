@@ -44,6 +44,9 @@ export default function Programs() {
               <p className="text-lg mb-4">
                 Join our monthly community cleanup initiative to help keep Hillsdale beautiful.
               </p>
+              <p className="mb-4">
+                The Garden Variety Suspects are currently on hiatus, so First Saturday clean-ups are held solely by the Usual Suspects crew.
+              </p>
               <div className="bg-yellow-50 p-4 rounded">
                 <p>When: First Saturday of each month</p>
                 <p>Meet: Outside Basics Market</p>

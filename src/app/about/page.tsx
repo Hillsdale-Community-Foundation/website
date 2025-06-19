@@ -20,11 +20,18 @@ export default function About() {
             <h2 className="text-2xl font-semibold mb-4">Board Members</h2>
             <ul className="space-y-2">
               <li>Jessica Kaplan (Chair, on leave)</li>
-              <li>Amy Houchen (Acting Chair)</li>
+              <li>Amy Houchen (Emerita, Acting Chair)</li>
               <li>Dick Hausken (Treasurer)</li>
               <li>Leila Ortega (Secretary)</li>
               <li>Shane Hall (Publisher)</li>
               <li>Jane Harold</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-6 mb-2">Emeritus Members</h3>
+            <ul className="space-y-2">
+              <li>Rick Seifert</li>
+              <li>Mike Roach</li>
+              <li>Michael Reunert</li>
             </ul>
           </section>
 
