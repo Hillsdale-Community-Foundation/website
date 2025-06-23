@@ -32,17 +32,15 @@ export default function RootLayout({
           {`
             window.formbutton = window.formbutton || function(){(formbutton.q = formbutton.q || []).push(arguments);};
             formbutton("create", {
-              action: "https://formspree.io/f/your-form-id",
-              title: "Website Feedback",
-              description: "Found a problem or have a request? Let us know!",
+              action: "https://formspree.io/f/mblyynrw",
+              title: "How can we help?",
               fields: [
-                { type: "text", name: "name", label: "Name" },
-                { type: "email", name: "email", label: "Email (optional)" },
-                { type: "textarea", name: "message", label: "Feedback", required: true },
+                { type: "email", label: "Email:", name: "email", required: true, placeholder: "your@email.com" },
+                { type: "textarea", label: "Message:", name: "message", placeholder: "What's on your mind?" },
                 { type: "submit" }
               ],
               styles: {
-                title: { backgroundColor: "#2563eb" },
+                title: { backgroundColor: "gray" },
                 button: { backgroundColor: "#2563eb" }
               }
             });
