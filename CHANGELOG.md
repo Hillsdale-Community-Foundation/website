@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## TL;DR for Board of Directors
 
-Since migrating from our old Wix site to GitHub Pages in April 2025, we rebuilt
+Since migrating from our old Wix site to GitHub Pages in June 2025, we rebuilt
 the site using Next.js for better performance and maintainability. Key updates
 include a PayPal donate button, a new contact page with a working form, and the
 integration of images and assets from the previous site to preserve branding.
