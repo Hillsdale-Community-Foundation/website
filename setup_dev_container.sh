@@ -19,7 +19,7 @@ Dockerfile
 .dockerignore
 EOF
 docker build -t "$IMAGE_NAME" -f- . <<'DOCKER'
-FROM node:18
+FROM node:20
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci

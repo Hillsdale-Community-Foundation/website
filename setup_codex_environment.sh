@@ -7,6 +7,12 @@ CONFIG_FILE="$CODEX_DIR/environment.json"
 
 mkdir -p "$CODEX_DIR"
 
+# Ensure Node 20 is active when generating the configuration
+if command -v nvm >/dev/null 2>&1; then
+  nvm install 20 >/dev/null
+  nvm use 20 >/dev/null
+fi
+
 if command -v node >/dev/null 2>&1; then
   NODE_VERSION="$(node --version | sed 's/^v//')"
 else
