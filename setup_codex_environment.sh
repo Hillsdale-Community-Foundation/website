@@ -24,6 +24,6 @@ echo "Installing npm dependencies..."
 npm ci
 
 echo "Running TypeScript checks..."
-npm run typecheck || true
+npm run typecheck
 
 echo "Codex environment configuration updated in $CONFIG_FILE"
