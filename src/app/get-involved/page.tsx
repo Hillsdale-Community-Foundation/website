@@ -1,6 +1,7 @@
 import Container from "@/app/_components/container";
 import Link from "next/link";
 import DonateButton from "@/app/_components/donate-button";
+import { FOUNDATION_ADDRESS } from "@/lib/constants";
 
 export default function GetInvolved() {
   return (
@@ -36,10 +37,8 @@ export default function GetInvolved() {
               </div>
                 <div className="space-y-4">
                 <p className="font-semibold">Or send checks to:</p>
-                <address className="not-italic">
-                  Hillsdale Community Foundation<br />
-                  1528 SW PENDLETON ST<br />
-                  97239-2618
+                <address className="not-italic whitespace-pre-line">
+                  {FOUNDATION_ADDRESS}
                 </address>
               </div>
             </section>
