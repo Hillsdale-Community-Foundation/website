@@ -1,4 +1,5 @@
 import Container from "@/app/_components/container";
+import { FOUNDATION_ADDRESS } from "@/lib/constants";
 
 export default function Contact() {
   return (
@@ -33,10 +34,8 @@ export default function Contact() {
                   
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Mailing Address</h3>
-                    <p className="text-gray-700">
-                      Hillsdale Community Foundation<br />
-                      P.O. Box 14592<br />
-                      Portland, OR 97293
+                    <p className="text-gray-700 whitespace-pre-line">
+                      {FOUNDATION_ADDRESS}
                     </p>
                   </div>
                   
