@@ -21,6 +21,10 @@ cat > "$CONFIG_FILE" <<JSON
 JSON
 
 echo "Installing npm dependencies..."
+if ! command -v npm >/dev/null 2>&1; then
+  echo "Error: npm is not installed. Please install npm and try again." >&2
+  exit 1
+fi
 npm ci
 
 echo "Running TypeScript checks..."
