@@ -31,7 +31,12 @@ cd site-demo
 npm install
 ```
 
-3. Start the development server:
+3. Update the Codex environment (optional):
+```bash
+./setup_codex_environment.sh
+```
+
+4. Start the development server:
 ```bash
 npm run dev
 ```
