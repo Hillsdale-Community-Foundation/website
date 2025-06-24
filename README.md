@@ -5,7 +5,7 @@ This repository contains the source for the Hillsdale Community Foundation's web
 ## Issues and Feature Requests
 
 For support and questions:
-- Create an issue in the GitHub repository
+- Create an [issue](https://github.com/Hillsdale-Community-Foundation/website/issues) in the GitHub repository
 - Contact the Hillsdale Community Foundation
 - Use the website Feedback button to report issues or requests
 
