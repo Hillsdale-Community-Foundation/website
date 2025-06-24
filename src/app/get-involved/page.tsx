@@ -38,8 +38,8 @@ export default function GetInvolved() {
                 <p className="font-semibold">Or send checks to:</p>
                 <address className="not-italic">
                   Hillsdale Community Foundation<br />
-                  1528 SW PENDLETON ST<br />
-                  97239-2618
+                  1528 SW Pendleton Street<br />
+                  Portland, OR 97239
                 </address>
               </div>
             </section>

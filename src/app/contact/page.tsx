@@ -35,8 +35,8 @@ export default function Contact() {
                     <h3 className="font-semibold text-lg mb-2">Mailing Address</h3>
                     <p className="text-gray-700">
                       Hillsdale Community Foundation<br />
-                      P.O. Box 14592<br />
-                      Portland, OR 97293
+                      1528 SW Pendleton Street<br />
+                      Portland, OR 97239
                     </p>
                   </div>
                   

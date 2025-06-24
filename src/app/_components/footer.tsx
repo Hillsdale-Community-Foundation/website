@@ -7,8 +7,8 @@ export function Footer() {
         <div className="py-12 flex flex-col items-center">
           <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
           <p className="mb-2">Hillsdale Community Foundation</p>
-          <p className="mb-2">P.O. Box 82995</p>
-          <p className="mb-6">Portland, OR 97282</p>
+          <p className="mb-2">1528 SW Pendleton Street</p>
+          <p className="mb-6">Portland, OR 97239</p>
           <div className="flex space-x-4">
             <a href="/get-involved" className="text-white hover:text-hillsdale-yellow">Get Involved</a>
             <a href="/donate" className="text-white hover:text-hillsdale-yellow">Donate</a>
