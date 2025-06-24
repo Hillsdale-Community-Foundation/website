@@ -5,7 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## TL;DR for Board of Directors
+## TL;DR
+
+Quick recap of improvements since migrating from Wix in June 2025:
+
+- Rebuilt the website on GitHub Pages using Next.js for better performance
+  and easier maintenance
+- Added PayPal donation button and a working contact form
+- Imported images and branding assets from the old site
+- Updated board and program information with improved layouts
+- Switched to `www.hillsdalecommunityfoundation.org`
+- Automated deployments and regular dependency updates
 
 Since migrating from our old Wix site to GitHub Pages in June 2025, we rebuilt
 the site using Next.js for better performance and maintainability. Key updates
@@ -13,6 +23,7 @@ include a PayPal donate button, a new contact page with a working form, and the
 integration of images and assets from the previous site to preserve branding.
 Board and program information has been refreshed and we now use automated
 deployment with regular dependency updates.
+
 
 ## [1.2.0] - 2025-06-19
 
