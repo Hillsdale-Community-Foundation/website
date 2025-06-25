@@ -17,33 +17,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest
-
-      - name: Run Python tests
-        run: pytest || true
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       - name: Install npm dependencies
-        run: npm ci || true
+        run: npm ci
 
       - name: Run TypeScript tests
-        run: |
-          npm run test || true
+        run: npm run test
 
-      - name: Run Pre-Commit
+      - name: Run Pre-Commit (Node only)
         run: |
-          pip install pre-commit
-          pre-commit run --all-files || true
+          npx pre-commit run --all-files || true

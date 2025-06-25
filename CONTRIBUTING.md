@@ -6,16 +6,13 @@ This project uses contributions from both human developers and AI agents (e.g., 
 
 ### Code Quality
 
-- Follow established style conventions (PEP8 for Python, ESLint/Prettier for TypeScript).
-- Include clear, concise comments and docstrings:
-  - Python: Google-style or NumPy-style docstrings.
-  - TypeScript: JSDoc annotations.
+- Follow established style conventions (ESLint/Prettier for TypeScript).
+- Include clear, concise comments and JSDoc annotations for TypeScript.
 - Keep functions and modules small and focused.
 
 ### Testing Requirements
 
 - All changes **must** include tests:
-  - Python: `pytest`.
   - TypeScript: `vitest` or `jest`.
 - Tests should cover:
   - Expected behavior.
