@@ -1,3 +1,5 @@
+import React from 'react';
+
 const DonateButton = () => {
   return (
     <form action="https://www.paypal.com/donate" method="post" target="_top" className="inline-block">
