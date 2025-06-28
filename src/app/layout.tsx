@@ -1,11 +1,11 @@
+import React from 'react';
 import Footer from "@/app/_components/footer";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Navigation from "@/app/_components/navigation";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Use default system fonts to avoid fetching external assets during build
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.hillsdalecommunityfoundation.org'),
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="font-sans">
         <Navigation />
         <div className="min-h-screen">{children}</div>
         <Footer />

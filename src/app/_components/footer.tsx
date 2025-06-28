@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from "@/app/_components/container";
 import { FOUNDATION_ADDRESS } from "@/lib/constants";
 

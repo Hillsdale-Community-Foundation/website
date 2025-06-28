@@ -1,31 +1,46 @@
 {
   "private": true,
+  "overrides": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "engines": {
-    "node": "^20"
+    "node": ">=20"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "test": "vitest",
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "next": "14.2.30",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "typescript": "^5.3.3"
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
     "@types/node": "^20.11.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
     "autoprefixer": "^10.4.7",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "jsdom": "^24.1.0",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.4"
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.3.3",
+    "vite": "^5.2.11",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
   }
 }
