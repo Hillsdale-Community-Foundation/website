@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from "next/image";
 
 const DonateButton = () => {
   return (
@@ -10,11 +10,11 @@ const DonateButton = () => {
       >
         Donate
       </button>
-      <img 
+      <Image
         alt="" 
         src="https://www.paypal.com/en_US/i/scr/pixel.gif" 
-        width="1" 
-        height="1" 
+        width={1}
+        height={1}
         className="border-0 hidden"
       />
     </form>

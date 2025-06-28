@@ -68,7 +68,7 @@ export default function Resources() {
                   Interested in partnering with the Hillsdale Community Foundation?
                 </p>
                 <p className="mb-4">
-                  We're always looking to collaborate with local businesses, organizations, 
+                  We&apos;re always looking to collaborate with local businesses, organizations, 
                   and community members who share our vision of strengthening Hillsdale.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
