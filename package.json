@@ -12,16 +12,17 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "next": "14.2.30",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "typescript": "^5.3.3"
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",
@@ -30,13 +31,14 @@
     "@types/react": "^18.2.57",
     "@types/react-dom": "^18.2.19",
     "autoprefixer": "^10.4.7",
-    "eslint": "^9.30.0",
-    "eslint-config-next": "^15.3.4",
-    "eslint-config-prettier": "^10.1.5",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
     "jsdom": "^26.1.0",
     "postcss": "^8.4.14",
-    "prettier": "^3.6.2",
-    "tailwindcss": "^4.1.11",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.3.3",
     "vite": "^7.0.0",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4"
