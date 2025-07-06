@@ -20,6 +20,15 @@ Quick recap of improvements since migrating from Wix in June 2025:
 
 Since migrating from our old Wix site to GitHub Pages in June 2025, we rebuilt the site using Next.js for better performance and maintainability. Key updates include a PayPal donate button, a new contact page with a working form, homepage feature boxes for key programs, and the integration of images and assets from the previous site to preserve branding. Board and program information has been refreshed, comprehensive project documentation has been added, and we now use automated deployment with regular dependency updates.
 
+## [1.3.1] - 2025-07-06
+
+### 🔧 Changed in 1.3.1
+
+- **Timezone Support**: Added `@date-fns/tz@1.0.2` dependency for critical timezone bug fixes as recommended in date-fns v4.1.0 release notes.
+  - Provides timezone-aware date operations via `TZDate` class
+  - Enables accurate date calculations across different time zones
+  - Includes comprehensive test coverage for timezone functionality
+
 ## [1.3.0] - 2025-06-20
 
 ### 🚀 Added in 1.3.0
