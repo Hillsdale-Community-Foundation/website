@@ -27,6 +27,21 @@ export default function RootLayout({
         <Navigation />
         <div className="min-h-screen">{children}</div>
         <Footer />
+        {/* Google Analytics */}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-6T55K5R4WB" 
+          strategy="afterInteractive" 
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6T55K5R4WB');
+          `}
+        </Script>
+        
+        {/* Feedback Widget */}
         <Script src="https://formspree.io/js/formbutton-v1.min.js" strategy="afterInteractive" />
         <Script id="feedback-widget" strategy="afterInteractive">
           {`
