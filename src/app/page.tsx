@@ -35,7 +35,8 @@ export default function Home() {
           </div>          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold mb-4">Annual Book Sale</h2>
-              <p>Join us on Sunday, July 20, 2025, from 9:00 AM – 1:00 PM for our annual book sale.</p>
+              <p>Join us on Sunday, July 20, from 9:00 AM – 1:00 PM for our annual book sale at The Watershed.</p>
+              <p className="mt-2 text-sm text-gray-600">6388 SW Capitol Hwy, Portland, OR 97239</p>
             </div>
             <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold mb-4">Hillsdale Assistance Team</h2>
