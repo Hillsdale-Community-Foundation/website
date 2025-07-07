@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllPosts } from '../lib/api'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.hillsdalecommunityfoundation.org'
+  const baseUrl = process.env.SITE_URL || 'https://www.hillsdalecommunityfoundation.org'
 
   // Static pages
   const staticPages = [
