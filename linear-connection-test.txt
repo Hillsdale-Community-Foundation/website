@@ -1,0 +1,2 @@
+This file was added to verify the Linear-to-GitHub repository connection for HIL-6.
+Linear issue: https://linear.app/hillsdale-community-foundation/issue/HIL-6/get-linear-connected-to-site-repo-and-able-to-make-changes
