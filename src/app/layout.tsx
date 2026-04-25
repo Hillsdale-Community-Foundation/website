@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from "@/app/_components/footer";
 import type { Metadata } from "next";
 import Navigation from "@/app/_components/navigation";
+import StatsigProvider from "@/app/_components/statsig-provider";
 import Script from "next/script";
 import "./globals.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans">
         <Navigation />
+        <StatsigProvider />
         <div className="min-h-screen">{children}</div>
         <Footer />
         {/* Google Analytics */}
