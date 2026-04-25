@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { vi, describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { vi, describe, it, expect } from 'vitest';
 import RootLayout from '../layout';
 
 // Mock @statsig/js-client so tests don't make real network requests
