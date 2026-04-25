@@ -44,7 +44,6 @@ describe('RootLayout', () => {
 
     it('initializes Statsig and logs page_view when SDK key is present', async () => {
       const { StatsigClient } = await import('@statsig/js-client');
-      const mockInstance = (StatsigClient as ReturnType<typeof vi.fn>).mock.results[0]?.value;
       const originalEnv = process.env.NEXT_PUBLIC_STATSIG_CLIENT_KEY;
       process.env.NEXT_PUBLIC_STATSIG_CLIENT_KEY = 'client-test-key';
 
