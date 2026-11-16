@@ -30,7 +30,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "@types/node": "^24.9.1",
     "@types/react": "^18.2.57",
-    "@types/react-dom": "^19.2.2",
+    "@types/react-dom": "^19.3.0",
     "autoprefixer": "^10.4.7",
     "eslint": "^9.38.0",
     "eslint-config-next": "15.3.5",
